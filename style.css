@@ -1,20 +1,39 @@
-html, body {
+body, html {
+    display: flex;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-.container {
-    display: flex;
-    background-color: royalblue;
-    height: 500px;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
+    background-image:url('img/IMG2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
 }
 
-p {
-    font-size: 100px;
-    font-weight: 900;
+.container {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 533px;
+    position: absolute;
+}
+
+.container .white {
+    background: white;
+    flex: 1;
+}
+
+.container .blue {
+    background: blue;
+    flex: 1;
+}
+
+.container .red {
+    background: red;
+    flex: 1;
+}
+.container .img {
+    position: absolute;
 }
